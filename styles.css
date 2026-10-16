@@ -1,0 +1,90 @@
+:root {
+    --color-primario: darkslateblue;
+    --color-gris-oscuro: #dddddd;
+    --color-gris-claro: #fbfbfb;
+}
+header {
+    text-align: center;
+}
+
+main {
+    font-family:'Courier New', Courier, monospace;
+    border-style: solid;
+    border-width:2px;
+    border-color: var(--color-gris-oscuro);
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+#barra-horizontal #filtros {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 40px;
+}
+
+#barra-horizontal #filtros label {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+hr {
+    border-style:solid;
+    border-color: var(--color-gris-oscuro);
+}
+
+#barra-horizontal #filtros input[type="radio"] {
+    width: 19px;
+    height: 19px;
+    margin: 0 5px 0 0;
+    accent-color: var(--color-primario);
+}
+
+#barra-horizontal #filtros input[type="text"] {
+    margin-left: auto;
+    width: 25%;
+    border-style: solid;
+    border-color: var(--color-gris-oscuro);
+    padding: 5px;
+    float: none;
+}
+
+#barra-horizontal #acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+#barra-horizontal button {
+    padding: 12px;
+    border: 1px solid var(--color-primario);
+    border-radius: 0;
+    background-color: white;
+    color: var(--color-primario);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#barra-horizontal button:hover {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.userDiv {
+    display:flex;
+    gap: 100px;
+    p {
+        width: 200px;
+    }
+    border-style: solid;
+    border: 2px;
+    border-color: var(--color-gris-claro);
+}
+.userDiv.impar {
+    background-color: var(--color-gris-oscuro);
+}
